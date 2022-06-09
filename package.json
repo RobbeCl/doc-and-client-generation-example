@@ -6,7 +6,7 @@
     "dev": "concurrently \"nodemon\" \"nodemon -x tsoa spec-and-routes\"",
     "build": "tsoa spec-and-routes && tsc",
     "start": "node build/src/server.js",
-    "generate-client": "openapi --input ./build/swagger.json --output generated"
+    "generate-client": "openapi --input ./spec/swagger.json --output generated-client"
   },
   "license": "MIT",
   "dependencies": {
